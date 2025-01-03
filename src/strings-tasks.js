@@ -314,15 +314,8 @@ function containsSubstring(str, substring) {
  *   countVowels('aEiOu') => 5
  *   countVowels('XYZ') => 1
  */
-function countVowels(str) {
-  const regex = /[aeiou]/g;
-  let count = 0;
-  for (const char of str) {
-    if (regex.includes(char)) {
-      count++;
-    }
-  }
-  return count;
+function countVowels(/* str */) {
+  throw new Error('Not implemented');
 }
 
 /**
